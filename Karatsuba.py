@@ -5,7 +5,7 @@ def Karatsuba(num1, num2):
         #When one of the terms has only one digit it isn't possible to perform the Karatsuba algorithm, so the result
         #is calculated directly.
 
-    if len(str(num1))//2 != 0:
+    if len(str(num1))%2 != 0:
         a = int(str(num1)[0])
         b = int(str(num1)[1:int(len(str(num1)))])
         c = int(str(num2)[0])
